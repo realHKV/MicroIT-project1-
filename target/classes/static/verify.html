@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Certificate</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+<div class="container">
+    <h2>Verify Internship Certificate</h2>
+    <form id="verificationForm">
+        <label for="certificateId">Enter Certificate ID:</label>
+        <input type="text" id="certificateId" name="certificateId" required>
+        <button type="submit" class="verify-button">Verify</button>
+    </form>
+
+    <div id="verificationResult" class="details-display">
+        <!-- User details will be displayed here -->
+    </div>
+
+    <div id="certificate-ids-list">
+        <h3>Already Stored Certificate IDs:</h3>
+        <ul id="idsList">
+            <!-- List of IDs will be dynamically loaded here -->
+        </ul>
+    </div>
+    <p><a href="index.html">Back to Home</a></p>
+</div>
+<script src="verify.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>

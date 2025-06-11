@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Internship</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+<div class="container">
+    <h2>Internship Application Form</h2>
+    <form id="applicationForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="collegeName">College Name:</label>
+        <input type="text" id="collegeName" name="collegeName" required>
+
+        <label for="collegeEnrollmentNumber">College Enrollment Number:</label>
+        <input type="text" id="collegeEnrollmentNumber" name="collegeEnrollmentNumber" required>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" placeholder="e.g., 1234567890" required>
+
+        <button type="submit" class="submit-button">Submit Application</button>
+    </form>
+    <div id="responseMessage" class="message"></div>
+    <p><a href="index.html">Back to Home</a></p>
+</div>
+<script src="apply.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
